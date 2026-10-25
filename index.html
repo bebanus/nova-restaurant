@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Restaurant & Lounge Karaoke</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-title">NOVA</span>
+                <span class="logo-subtitle">RESTAURANT & KARAOKE</span>
+            </div>
+            <nav class="nav" id="navMenu">
+                <a href="#about">О концепции</a>
+                <a href="#menu">Меню кухни</a>
+                <a href="#bar-section">Бар & Напитки</a>
+                <a href="#wine">Винная карта</a>
+                <a href="#karaoke">Караоке & VIP</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#booking" class="btn btn-gold mobile-btn">Забронировать</a>
+            </nav>
+            <a href="#booking" class="btn btn-gold desktop-btn">Забронировать</a>
+            <!-- Кнопка Гамбургер -->
+            <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <div class="container hero-content animate-on-scroll">
+            <p class="hero-tag">RESTAURANT & KARAOKE LOUNGE</p>
+            <h1 class="hero-title">Искусство вкуса и атмосфера звука</h1>
+            <p class="hero-description">Авторская кухня от шефа, безупречный сервис и закрытые VIP-залы с акустикой концертного уровня.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-gold">Забронировать стол</a>
+                <a href="#menu" class="btn btn-outline">Изучить меню</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about-section">
+        <div class="container about-container animate-on-scroll">
+            <h2 class="section-title">О концепции</h2>
+            <div class="gold-line"></div>
+            <p class="lead-text">NOVA — это пространство, где высокая гастрономия встречается с эстетикой вечернего отдыха.</p>
+            <p>Мы объединили изысканный интерьер из натурального мрамора и латуни с передовыми акустическими технологиями. Здесь каждый вечер превращается в особенное событие — от тихих деловых ужинов до частных вечеринок в закрытых залах.</p>
+        </div>
+    </section>
+
+    <!-- ПОЛНОЕ МЕНЮ КУХНИ -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Меню кухни</h2>
+            <div class="gold-line animate-on-scroll"></div>
+
+            <!-- Табы кухни -->
+            <div class="menu-tabs animate-on-scroll">
+                <button class="tab-btn active" data-tab="salads-starters">Салаты & Закуски</button>
+                <button class="tab-btn" data-tab="soups-baking">Супы & Выпечка</button>
+                <button class="tab-btn" data-tab="mains">Основной курс</button>
+                <button class="tab-btn" data-tab="company">На компанию</button>
+                <button class="tab-btn" data-tab="sides-desserts">Гарниры & Десерты</button>
+            </div>
+
+            <!-- Таб 1: Салаты и Закуски -->
+            <div class="tab-content active" id="salads-starters">
+                <div class="menu-category">
+                    <h3 class="category-title">Салаты</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Салат из свежих овощей</span><span class="item-price">4900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Салат со свеклой, зеленью и сыром</span><span class="item-price">4900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Салат с авокадо, брокколи, огурцом, киноа и миксом зелени</span><span class="item-price">5500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Салат с креветками и баклажанами <span class="badge-new">New</span></span><span class="item-price">5900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Чапче (фунчоза бататовая) — Овощи</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Чапче (фунчоза бататовая) — Курица</span><span class="item-price">5000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Чапче (фунчоза бататовая) — Конина</span><span class="item-price">5500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Салат Favor с кониной, перепелиными яйцами, авокадо и зеленью <span class="badge-chef">Chef's choice</span></span><span class="item-price">7500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Закуски</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Карпачо из Дорадо с соусом понзу <span class="badge-new">New</span></span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Паштет из куриной печени с ягодным соусом</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Татаки из нежной вырезки телятины</span><span class="item-price">5500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Креветки в хрустящей оболочке и соусом спайси</span><span class="item-price">5900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Закуска к водке: селедочка, лук, картошка, маринованные огурчики <span class="badge-new">New</span></span><span class="item-price">6000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Ростбиф с запеченным перцем и соусом тонато</span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Семга малосольная с чиабаттой</span><span class="item-price">6800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Буррата под соусом песто и томатами (по предзаказу)</span><span class="item-price">7900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Квашеная капуста с хрустящими огурцами (по предзаказу)</span><span class="item-price">5500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Закуски к вину</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Оливки зеленые</span><span class="item-price">2900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фокачча с пармезаном и оливками</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Сырная плато к вину: камамбер, качокавалло, горгонзола, пармезан и авторский курт</span><span class="item-price">11500 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2: Супы и Выпечка -->
+            <div class="tab-content" id="soups-baking">
+                <div class="menu-category">
+                    <h3 class="category-title">Супы</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Суп-лапша с домашним цыпленком</span><span class="item-price">3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Том Ям с морепродуктами</span><span class="item-price">6500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Выпечка</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Хлебная корзина</span><span class="item-price">500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Итальянская чиабатта</span><span class="item-price">800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фокачча с пармезаном и оливками</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Хычины с трюфелем</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Мини беляши с говядиной (8шт)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Мини чебуреки с индейкой <span class="badge-new">New</span></span><span class="item-price">3800 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 3: Основной курс -->
+            <div class="tab-content" id="mains">
+                <div class="menu-category">
+                    <h3 class="category-title">Основной курс</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Фермерский цыпленок под соусом тахини</span><span class="item-price">5800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Бефстроганов с картофельным пюре</span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Куриная грудка (150г) в сливочно-трюфельном соусе с бланшированным шпинатом</span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Ребро теленка на кости (300г) с картофельным пюре и соусом гамадари</span><span class="item-price">7500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Медальоны из конины (200г) с брюнуаз из корнеплодов <span class="badge-chef">Chef's choice</span></span><span class="item-price">7800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Польпетте из куриного филе (150г) с трюфельным соусом</span><span class="item-price">5500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Чёрный рис с креветками (200г)</span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Котлеты из лосося и спагетти из цукини под соусом песто <span class="badge-new">New</span></span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">NOVA Бургер с хрустящими картофельными дольками</span><span class="item-price">6800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Стейк лосося по-азиатски с бок-чой под соусом мисо</span><span class="item-price">7900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Лапша с креветками и курицей <span class="badge-new">New</span></span><span class="item-price">6500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Рибай Black Angus Prime (USA) с гречневой лапшой и овощами <span class="badge-new">New</span></span><span class="item-price">8500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Цельное Дорадо (500-600г) под соусом Аква Пацца</span><span class="item-price">9800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Цельный Сибас (500-600г) под соусом Аква Пацца</span><span class="item-price">9800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фланк стейк с овощами гриль (KazBeef, 250г)</span><span class="item-price">9900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Рибай Black Angus (KazBeef, 350г)</span><span class="item-price">11800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Рибай Black Angus (Prime USA, 400г) — must try</span><span class="item-price">22500 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 4: Блюда на компанию -->
+            <div class="tab-content" id="company">
+                <div class="menu-category">
+                    <h3 class="category-title">Блюда на компанию</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name"><b>Мясной микс (на 6 персон):</b> фланк стейк с перцем (KazBeef, 500г), ребро теленка на кости (KazBeef, 700г), медальоны из конины (500г) с перечным соусом, подается с картофелем и овощами гриль</span><span class="item-price">49800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Ребра теленка (KazBeef, на 3-4 персоны):</b> подается с молодым картофелем, халапеньо и зеленым луком (по предзаказу)</span><span class="item-price">39800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Соте из морепродуктов (на 5 персон):</b> морской гребешок, дорадо, голубые мидии, бэби кальмары, креветки, бэби осьминог, овощи, зелень, чиабатта</span><span class="item-price">58000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Рыбный микс (на 5 персон):</b> филе сибаса, дорадо, форели, королевские креветки, тигровые креветки с черным рисом под соусом берблан</span><span class="item-price">49800 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 5: Гарниры и Десерты -->
+            <div class="tab-content" id="sides-desserts">
+                <div class="menu-category">
+                    <h3 class="category-title">Гарниры</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Картофель фри</span><span class="item-price">1500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Картофель жареный с грибами и луком</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Овощи на гриле</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Батат фри</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Рис чёрный с овощами wok</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Спаржа</span><span class="item-price">4900 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Десерты</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Мороженое (Сливочное / Базилик с фисташкой / Кофейное)</span><span class="item-price">850 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Маковый пирог под карамельным соусом</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фирменный Наполеон</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Медовик</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Шоколадно-карамельный фондан на миндальной песочной корзинке с кокосовым мороженым</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фисташковый фондант</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Профитроли с заварным кремом под шоколадным соусом</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Ассорти десертов на компанию:</b> Наполеон, медовик, профитроли, десерт Павлова <span class="badge-chef">Chef's choice</span></span><span class="item-price">16500 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БАР И НАПИТКИ -->
+    <section id="bar-section" class="menu-section" style="background: #181818; color: #fff;">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll" style="color: #fff;">Бар & Напитки</h2>
+            <div class="gold-line animate-on-scroll"></div>
+
+            <div class="menu-tabs animate-on-scroll">
+                <button class="tab-btn active" data-tab="cocktails-tab">Коктейли</button>
+                <button class="tab-btn" data-tab="spirits-tab">Крепкий алкоголь</button>
+                <button class="tab-btn" data-tab="soft-tab">Безалкогольные & Чай/Кофе</button>
+            </div>
+
+            <!-- Таб: Коктейли -->
+            <div class="tab-content active" id="cocktails-tab">
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Sour & Sweet Alcohol Cocktails</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Mojito (ром, лайм, мята, содовая, 300ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Whiskey Sour (виски, сок лимона, белок, 150ml)</span><span class="item-price">3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Clover club (джин, сок лимона, пюре малины, белок, 210ml)</span><span class="item-price">3700 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Strawberry Night (водка, кампари, сок лимона, белок, содовая, клубника, мед, 230ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Bee’s Knees (ром, мед, лимон, апельсин, белок, 210ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Garden Gin Fizz (джин, малина, ревень, лимон, содовая, 300ml) <span class="badge-new">New</span></span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Velvet Rosso (джин, красный вермут, малина, какао, 150ml) <span class="badge-new">New</span></span><span class="item-price">3500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Strong Alcohol Cocktails</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Espresso Martini (водка, ликер, эспрессо, 120ml)</span><span class="item-price">3700 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Negroni (кампари, вермут, джин, 150ml)</span><span class="item-price">3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Jasmine (джин, биттер, ликер, лимон, 150ml) <span class="badge-new">New</span></span><span class="item-price">3500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Aperetifs</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Aperol Spritz (апероль, игристое, содовая, 400ml)</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Eastside (джин, сок лайма, огурец, мята, 150ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Bellini (пюре персик, игристое, 180ml)</span><span class="item-price">3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Campari Spritz (биттер, игристое, содовая, 180ml) <span class="badge-new">New</span></span><span class="item-price">4500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Non-Alcoholic Cocktails</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Virgin Mojito (лайм, мята, содовая, 300ml)</span><span class="item-price">2000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Virgin Aperol Spritz (орандж спритц, тоник, 300ml)</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Garden Gin Fizz (б/а джин, малина, ревень, содовая, 300ml) <span class="badge-new">New</span></span><span class="item-price">2900 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб: Крепкий алкоголь -->
+            <div class="tab-content" id="spirits-tab">
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Whiskey (50ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Ballantine’s Finest 3 YO</span><span class="item-price">3000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Jameson</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">West Cork Bourbon Cask</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">West Cork Single Malt Bourbon Cask</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Monkey Shoulder</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Glenmorangie The Original 12 Y.O.</span><span class="item-price">4500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Glenfiddich 12 Y.O.</span><span class="item-price">5500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Vodka (50ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Organic (Russia)</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Царская Золотая (Russia)</span><span class="item-price">3000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Sobolinaya (France)</span><span class="item-price">3700 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Reyka (Iceland)</span><span class="item-price">3700 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Nemiroff Lex Ultra-Premium (Ukraine)</span><span class="item-price">3700 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Чистые росы (Russia)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Belvedere Organic (Poland)</span><span class="item-price">4000 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Домашние Наливки (50ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Малина-молочный улун</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Клубника-корица</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Манго-жасмин <span class="badge-new">New</span></span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Облепиха-апельсин <span class="badge-new">New</span></span><span class="item-price">2500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Digestive, Cognac, Gin, Rum, Tequila (50ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Jagermeister (bitter)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Graham’s 10 Y.O. (port wine)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Chateau du Breuil V.S.O.P (calvados)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Hennessy V.S.O.P (Cognac)</span><span class="item-price">4900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Barrister (Gin)</span><span class="item-price">2800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Bulldog Gin</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Hendrick’s (Gin)</span><span class="item-price">3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Plantation 3 Stars White (Rum)</span><span class="item-price">2900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Plantation 3 Stars Original Dark (Rum)</span><span class="item-price">2900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Plata, Don Ramon (Tequila)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Reposado, Don Ramon (Tequila)</span><span class="item-price">3500 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Beer & Beer Snacks</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Draft Beer: Bud (330ml / 500ml)</span><span class="item-price">3000 / 3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Bottled Beer: Bitburger Ale (330ml)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Bottled Beer: Bitburger Drive non-alcoholic (330ml)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фисташки (100гр.)</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Малосольный чечил (100гр.)</span><span class="item-price">2500 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб: Безалкогольные напитки, чай, кофе -->
+            <div class="tab-content" id="soft-tab">
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Water</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">San Benedetto still (250ml)</span><span class="item-price">950 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">San Benedetto still (750ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">San Benedetto sparkling (750ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Tassay (500ml)</span><span class="item-price">1800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Tassay Excellent (750ml)</span><span class="item-price">3000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Tassay Emerald (750ml)</span><span class="item-price">3000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Nabeghlavi (500ml)</span><span class="item-price">1800 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Juices & Soft Drinks</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Swell в ассортименте (250ml / 750ml)</span><span class="item-price">1800 / 3900 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Tonic Schweppes (450ml)</span><span class="item-price">1500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Coca Cola (250ml)</span><span class="item-price">1500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Red Bull (250ml)</span><span class="item-price">1900 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Homemade Lemonades & Fresh Juices & Iced Tea</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Лимонад Ягодный / Манго-Маракуйя / Персик-Ананас / Мохито (350ml / 1L)</span><span class="item-price">1800 / 3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Клюквенный морс (350ml / 1L)</span><span class="item-price">1800 / 3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Свежевыжатый морковный сок (250ml)</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Свежевыжатый апельсиновый сок (250ml)</span><span class="item-price">3000 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Свежевыжатый яблочный сок (250ml)</span><span class="item-price">3800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Яблочно-морковный / Яблочно-апельсиновый фреш (250ml)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Iced Tea: Ананас-Ромашка / Ягоды-Молочный улун (1L)</span><span class="item-price">2900 ₸</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title" style="color: var(--gold-primary);">Teas & Coffee (850ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Классический чай (Английский завтрак, Сенча, Молочный улун, По-казахски, Эрл Грей, Жасмин)</span><span class="item-price">2500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Фирменный чай (Имбирный, Облепиховый, Марокканский, Барбарисовый, Из шиповника, Ташкентский, Яблоко-Ромашка)</span><span class="item-price">3500 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Espresso</span><span class="item-price">850 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Espresso Doppio / Americano</span><span class="item-price">1200 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Cappuccino / Latte</span><span class="item-price">1800 ₸</span></div>
+                        <div class="menu-item"><span class="item-name">Сироп в ассортименте (10ml)</span><span class="item-price">200 ₸</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОЛНАЯ ВИННАЯ КАРТА (С ТАБАМИ) -->
+    <section id="wine" class="wine-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Винная карта / Wine List</h2>
+            <div class="gold-line animate-on-scroll"></div>
+            <p class="section-description text-center animate-on-scroll">
+                Наша винная коллекция содержит неожиданные находки, которые порой оказываются приятнее громких имен. Тщательно продуманная винотека ресторана «NOVA» позволит насладиться каждым глотком[cite: 6].
+            </p>
+
+            <!-- Мини-табы винной карты -->
+            <div class="menu-tabs wine-tabs animate-on-scroll">
+                <button class="wine-tab-btn active" data-winetab="by-glass">Бокалы & Мини</button>
+                <button class="wine-tab-btn" data-winetab="sparkling">Игристое & Шампанское</button>
+                <button class="wine-tab-btn" data-winetab="white">Белые вина</button>
+                <button class="wine-tab-btn" data-winetab="red">Красные & Розовые</button>
+                <button class="wine-tab-btn" data-winetab="non-alc">Безалкогольные</button>
+            </div>
+
+            <!-- Подвкладка 1: По бокалам и мини -->
+            <div class="wine-content active" id="by-glass">
+                <div class="wine-category">
+                    <h3 class="category-title">Вина по бокалам / Wine by Glass (150 ml)</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name"><b>Белое:</b> Pinot Grigio, Luna, Vaccaro, Sicilia, Italy[cite: 7]</span><span class="item-price">3800 ₸[cite: 7]</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Белое:</b> Sauvignon Blanc, “X” SJP, Invivo, Marlborough, New Zealand[cite: 7]</span><span class="item-price">3900 ₸[cite: 7]</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Красное:</b> Belvento Sireno, Toscana, Italy[cite: 7]</span><span class="item-price">4800 ₸[cite: 7]</span></div>
+                        <div class="menu-item"><span class="item-name"><b>Красное:</b> Gran Maestro Primitivo di Manduria, Puglia, Italy[cite: 7]</span><span class="item-price">4800 ₸[cite: 7]</span></div>
+                    </div>
+                </div>
+
+                <div class="wine-category">
+                    <h3 class="category-title">Мини-бутылки / Mini Bottles (200 ml)[cite: 7]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Prosecco "Il Fresco" Brut, Villa Sandi, Italy[cite: 7]</span><span class="item-price">6800 ₸[cite: 7]</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвкладка 2: Игристое, Шампанское, Розовое -->
+            <div class="wine-content" id="sparkling">
+                <div class="wine-category">
+                    <h3 class="category-title">Шампанское / Champagne (750 ml)[cite: 8]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Moët & Chandon Impérial[cite: 8]</span><span class="item-price">59000 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Billecart-Salmon, Brut Réserve[cite: 8]</span><span class="item-price">59000 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Veuve Clicquot Brut Yellow Label[cite: 8]</span><span class="item-price">65000 ₸[cite: 8]</span></div>
+                    </div>
+                </div>
+
+                <div class="wine-category">
+                    <h3 class="category-title">Кава, Креман & Просекко (750 ml)[cite: 7, 8]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Cava Reserva de la Familia, Juvé & Camps[cite: 8]</span><span class="item-price">27500 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Cremant d'Alsace Brut, Wolfberger[cite: 8]</span><span class="item-price">26500 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Prosecco «Il Fresco» Brut, Villa Sandi, Italy[cite: 7]</span><span class="item-price">22500 ₸[cite: 7]</span></div>
+                        <div class="menu-item"><span class="item-name">Millesimato, Valdobbiadene DOCG Superiore, Villa Sandi Brut[cite: 7]</span><span class="item-price">23800 ₸[cite: 7]</span></div>
+                        <div class="menu-item"><span class="item-name">Ruggery Prosecco di Valdobbiadene Extra Dry[cite: 7]</span><span class="item-price">26500 ₸[cite: 7]</span></div>
+                    </div>
+                </div>
+
+                <div class="wine-category">
+                    <h3 class="category-title">Розовое вино / Rose Wine (750 ml)[cite: 8]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Hampton Water, Gérard Bertrand of Bon Jovi, France[cite: 8]</span><span class="item-price">25000 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Miraval, Famille Perrin, Cotes de Provence AOC[cite: 8]</span><span class="item-price">29500 ₸[cite: 8]</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвкладка 3: Белые вина -->
+            <div class="wine-content" id="white">
+                <div class="wine-category">
+                    <h3 class="category-title">Белое вино / White Wine (Франция & Италия)[cite: 8]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Viognier, Les Jamelles (Франция)[cite: 8]</span><span class="item-price">20500 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Domaine de l'Herre Sauvignon Blanc, Cotes de Gascogne[cite: 8]</span><span class="item-price">20800 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Gewurztraminer, Wolfberger, Alsace[cite: 8]</span><span class="item-price">23800 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Riesling Signature, Wolfberger, Alsace[cite: 8]</span><span class="item-price">23000 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Terre Allegre, Trebbiano, Cielo e Terra (semi-sweet, Италия)[cite: 8]</span><span class="item-price">18500 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Pinot Grigio Luna, Vaccaro, Sicilia (Италия)[cite: 8]</span><span class="item-price">20800 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">3 Passo Bianco, Cielo e Terra, Toscana (Италия)[cite: 8]</span><span class="item-price">21700 ₸[cite: 8]</span></div>
+                        <div class="menu-item"><span class="item-name">Vermentino San Felice Toscana IGT (Италия)[cite: 8]</span><span class="item-price">25500 ₸[cite: 8]</span></div>
+                    </div>
+                </div>
+
+                <div class="wine-category">
+                    <h3 class="category-title">Белое вино / White Wine (Испания, Австрия & Мир)[cite: 9]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Verdejo DO, Rueda, Jose Pariente (Испания)[cite: 9]</span><span class="item-price">24500 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">“Mar de Frades” Albarino DO Rias Baixas (Испания)[cite: 9]</span><span class="item-price">26500 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">“Austrian Pepper” Zweigelt Niederosterreich (Австрия)[cite: 9]</span><span class="item-price">23500 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Sauvignon Blanc, No Road In, Marlborough (Новая Зеландия)[cite: 9]</span><span class="item-price">19500 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Sauvignon Blanc, “X” SJP, Invivo, Marlborough (Новая Зеландия)[cite: 9]</span><span class="item-price">19500 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Sauvignon Blanc, Maori Moana, Marlborough (Новая Зеландия)[cite: 9]</span><span class="item-price">21000 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Sauvignon Blanc “Nuala”, Marlborough (Новая Зеландия)[cite: 9]</span><span class="item-price">25800 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Chardonnay Vintner`s Reserve, Kendall Jackson (Калифорния, США)[cite: 9]</span><span class="item-price">32000 ₸[cite: 9]</span></div>
+                        <div class="menu-item"><span class="item-name">Sauvignon Blanc “Cloudy Bay”, Marlborough (Новая Зеландия)[cite: 9]</span><span class="item-price">42000 ₸[cite: 9]</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвкладка 4: Красные вина -->
+            <div class="wine-content" id="red">
+                <div class="wine-category">
+                    <h3 class="category-title">Красное вино / Red Wine (Италия)[cite: 10]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">3 Passo Rosso, Organic, Cielo e Terra[cite: 10]</span><span class="item-price">21700 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Gran Maestro Primitivo di Manduria, Puglia[cite: 10]</span><span class="item-price">22000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Belvento “Sireno” Toscana IGT, 2020[cite: 10]</span><span class="item-price">25000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Chianti Classico Brolio, Ricasoli 2021, Toscana[cite: 10]</span><span class="item-price">28000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Pinot Noir, Terlan Tradition, Alto Adige, DOC 2022[cite: 10]</span><span class="item-price">28000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Le Difese, Tenuta San Guido, Toscana IGT[cite: 10]</span><span class="item-price">36800 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">SESSANTANNI Primitivo di Manduria DOP[cite: 10]</span><span class="item-price">37500 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">IL Borro, Organic, Toscana[cite: 10]</span><span class="item-price">65000 ₸[cite: 10]</span></div>
+                    </div>
+                </div>
+
+                <div class="wine-category">
+                    <h3 class="category-title">Красное вино / Red Wine (Испания, Австрия & Мир)[cite: 10]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Marques De Murrieta Reserva DOC Rioja (Испания)[cite: 10]</span><span class="item-price">35000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">“Austrian Cherry” Zweigelt Niederosterreich (Австрия)[cite: 10]</span><span class="item-price">22500 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Koonunga Hill Shiraz-Cabernet Sauvignon, South Australia[cite: 10]</span><span class="item-price">24000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Syrah 20 Barrels, Cono Sur, Limari Valley, Chile[cite: 10]</span><span class="item-price">32000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Merlot, Vintner’s Reserve, Kendall-Jackson, California, USA[cite: 10]</span><span class="item-price">35000 ₸[cite: 10]</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвкладка 5: Безалкогольные вина -->
+            <div class="wine-content" id="non-alc">
+                <div class="wine-category">
+                    <h3 class="category-title">Безалкогольное вино / Non-Alcoholic Wine (750 ml)[cite: 10]</h3>
+                    <div class="menu-items-grid">
+                        <div class="menu-item"><span class="item-name">Alcohol Free, Vegan, La Gioiosa “et Amorosa”[cite: 10]</span><span class="item-price">21000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Natureo Muscat, Spain[cite: 10]</span><span class="item-price">23000 ₸[cite: 10]</span></div>
+                        <div class="menu-item"><span class="item-name">Primitivo “Alternativa”, Doppio Passo, Italy[cite: 10]</span><span class="item-price">23000 ₸[cite: 10]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Караоке & VIP -->
+    <section id="karaoke" class="karaoke-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Залы & VIP Suites</h2>
+            <div class="gold-line animate-on-scroll"></div>
+            <p class="section-description text-center animate-on-scroll">Профессиональный звук Meyer Sound, световая партитура и приватный комфорт.</p>
+
+            <div class="karaoke-grid animate-on-scroll">
+                <div class="karaoke-card">
+                    <div class="card-icon">🎤</div>
+                    <h3>Main Караоке-Зал</h3>
+                    <p>Просторная сцена, поддержка бэк-вокалистов и динамическое световое сопровождение каждого выступления.</p>
+                    <span class="hall-info">До 50 гостей</span>
+                </div>
+                <div class="karaoke-card">
+                    <div class="card-icon">✨</div>
+                    <h3>VIP Lounge "Gold"</h3>
+                    <p>Уютная приватная атмосфера в теплых золотых тонах для камерных встреч и небольших компаний.</p>
+                    <span class="hall-info">8–12 человек</span>
+                </div>
+                <div class="karaoke-card">
+                    <div class="card-icon">👑</div>
+                    <h3>VIP Suite "NOVA"</h3>
+                    <p>Роскошный сьют с собственным танцполом, персональным караоке-комплексом и изолированным обслуживанием.</p>
+                    <span class="hall-info">До 20 человек</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Интерьер & Атмосфера</h2>
+            <div class="gold-line animate-on-scroll"></div>
+            <p class="section-description text-center animate-on-scroll">Каждая деталь пространства создана для вашего комфорта.</p>
+
+            <div class="gallery-grid animate-on-scroll">
+                <div class="gallery-item" data-src="images/vip-gold-1.png">
+                    <img src="images/vip-gold-1.png" alt="VIP Lounge Gold">
+                    <div class="gallery-hover"><h3>VIP Lounge Gold</h3><span>Развернуть</span></div>
+                </div>
+                <div class="gallery-item" data-src="images/vip-nova-1.png">
+                    <img src="images/vip-nova-1.png" alt="VIP Suite NOVA">
+                    <div class="gallery-hover"><h3>VIP Suite NOVA</h3><span>Развернуть</span></div>
+                </div>
+                <div class="gallery-item" data-src="images/main-hall.png">
+                    <img src="images/main-hall.png" alt="Главный зал">
+                    <div class="gallery-hover"><h3>Главный Зал</h3><span>Развернуть</span></div>
+                </div>
+                <div class="gallery-item" data-src="images/vip-nova-2.png">
+                    <img src="images/vip-nova-2.png" alt="VIP Suite NOVA 2">
+                    <div class="gallery-hover"><h3>VIP Suite NOVA 2</h3><span>Развернуть</span></div>
+                </div>
+                <div class="gallery-item" data-src="images/vip-nova-3.png">
+                    <img src="images/vip-nova-3.png" alt="VIP Suite NOVA 3">
+                    <div class="gallery-hover"><h3>VIP Suite NOVA 3</h3><span>Развернуть</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно галереи -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Раздел FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Часто задаваемые вопросы</h2>
+            <div class="gold-line animate-on-scroll"></div>
+
+            <div class="faq-list animate-on-scroll">
+                <div class="faq-item">
+                    <button class="faq-question">Какой депозит предусмотрен при бронировании? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>В пятницу, субботу и праздничные дни действует депозитарная система бронирования. Размер депозита зависит от выбранной зоны и количества гостей.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Правила в отношении напитков и блюд со стороны <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Внос собственных напитков и продуктов не предусмотрен. Для праздничных тортов возможно исключение при наличии чека из специализированной кондитерской.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Дресс-код и возрастные ограничения <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>В заведении действует концепция Smart Casual. В вечернее время (после 20:00) действует ограничение по возрасту 21+.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Условия для парковки автомобилей <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Для гостей NOVA доступна охраняемая парковочная зона непосредственно возле основного входа.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-box animate-on-scroll">
+                <h2 class="section-title text-center">Забронировать визит</h2>
+                <div class="gold-line"></div>
+                <p class="text-center booking-sub">Заполните детали заказа, и мы подтвердим бронь в течение 10 минут.</p>
+
+                <form id="bookingForm" class="booking-form" action="https://formspree.io/f/maeeqqbe" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Александр">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (777) 000-00-00">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Время</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Гостей</label>
+                            <select id="guests" name="guests">
+                                <option value="1-2">1 - 2 персоны</option>
+                                <option value="3-5">3 - 5 персон</option>
+                                <option value="6-10">6 - 10 персон</option>
+                                <option value="vip">VIP Suite (до 20 человек)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hall">Предпочитаемая зона</label>
+                            <select id="hall" name="hall">
+                                <option value="restaurant">Основной ресторан</option>
+                                <option value="karaoke-main">Общий караоке-зал</option>
+                                <option value="vip-gold">VIP Lounge Gold</option>
+                                <option value="vip-nova">VIP Suite NOVA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full">Подтвердить бронирование</button>
+                </form>
+                <div id="bookingSuccess" class="booking-success" style="display: none;">
+                    <h3>✨ Ваша заявка принята</h3>
+                    <p>Менеджер службы бронирования свяжется с вами для подтверждения стола.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал / Контакты -->
+    <footer id="contacts" class="footer">
+        <div class="container footer-content animate-on-scroll">
+            <div class="footer-logo">
+                <span class="logo-title">NOVA</span>
+                <span class="logo-subtitle">RESTAURANT & KARAOKE</span>
+            </div>
+            <div class="footer-info">
+                <p>📍 г. Алматы, Пр. Аль-Фараби, 45</p>
+                <p>📞 +7 777 700 7007</p>
+                <p>⏰ Пн - Вс: 12:00 – 04:00</p>
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 NOVA Lounge. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Уведомление о Cookie -->
+    <div id="cookiePopup" class="cookie-popup">
+        <p>Мы используем cookie-файлы для обеспечения максимального удобства работы с сайтом.</p>
+        <button id="acceptCookie" class="btn btn-gold">Принять</button>
+    </div>
+
+    <!-- Плавающая кнопка WhatsApp -->
+    <a href="https://wa.me/77777007007?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B2%20Nova." class="whatsapp-btn" target="_blank" aria-label="Связаться в WhatsApp">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
