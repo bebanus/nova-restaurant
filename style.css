@@ -936,3 +936,22 @@ h1, h2, h3, .logo-title {
         flex: 0 0 auto; /* Запрещаем кнопкам сжиматься */
     }
 }
+/* ===== Адаптив формы бронирования для мобильных устройств ===== */
+@media (max-width: 768px) {
+    .booking-box {
+        padding: 25px 15px; /* Уменьшаем внутренние отступы контейнера */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .booking-section .section-title {
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка для мобильных */
+        word-wrap: break-word; /* Включаем переносы, если текст не влезает */
+        padding: 0 10px;
+    }
+
+    .booking-sub {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
