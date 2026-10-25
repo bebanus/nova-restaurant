@@ -914,3 +914,25 @@ h1, h2, h3, .logo-title {
     font-size: 10.5px;
     letter-spacing: 1.5px;
 }
+/* ===== Адаптивность кнопок меню на телефонах ===== */
+@media (max-width: 768px) {
+    /* Делаем горизонтальный скролл с красивым скрытым скроллбаром для категорий меню */
+    .menu-section .menu-tabs,
+    .wine-section .wine-tabs {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .menu-section .menu-tabs::-webkit-scrollbar,
+    .wine-section .wine-tabs::-webkit-scrollbar {
+        display: none; /* Скрываем полоску прокрутки для эстетики */
+    }
+
+    .tab-btn, .wine-tab-btn {
+        flex: 0 0 auto; /* Запрещаем кнопкам сжиматься */
+    }
+}
